@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+    <div id="errormessages" th:if="${errorMessage}" class="flash-message" th:text="${errorMessage}"></div>
+    <form id="crear_tasca" th:action="@{/tasques}" method="post">
+        <h1>Gestor de tasques</h1>
+        <label for="descripcio">Introdueix una descripció per la tasca:</label>
+        <input type="text" id="descripcio" name="descripcio">
+        <button type="submit">Crear tasca</button>
+        <a th:href="@{/tasques}">Veure tasques</a>
+    </form>
+</body>
+</html>

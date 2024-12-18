@@ -1,0 +1,5 @@
+org/entdes/todolist/TodolistController.class
+org/entdes/todolist/GestorTasques.class
+org/entdes/todolist/TodolistApplication.class
+org/entdes/todolist/Tasca.class
+org/entdes/todolist/ServletInitializer.class
